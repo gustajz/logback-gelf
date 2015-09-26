@@ -19,7 +19,9 @@ public class GelfSSLSender extends GelfTCPSender {
         super(host, port);
         try {
             this.socketFactory = initSocketFactory(trustAllCertificates);
-        } catch (NoSuchAlgorithmException | KeyManagementException e) {
+        } catch (NoSuchAlgorithmException e) {
+        	throw new IOException("Could not find an SSL provider. Sending GELF logs won't work.", e);
+        } catch (KeyManagementException e) {
             throw new IOException("Could not find an SSL provider. Sending GELF logs won't work.", e);
         }
     }

@@ -15,7 +15,7 @@ public class GelfMessage {
     private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
 
     private long timestampMillis;
-    private Map<String, Object> fieldNameToValueMap = new HashMap<>();
+    private Map<String, Object> fieldNameToValueMap = new HashMap<String, Object>();
 
     public GelfMessage() {
         fieldNameToValueMap.put("version", VERSION_VALUE);

@@ -16,9 +16,9 @@ apply plugin: 'propdeps-idea'
 apply plugin: 'propdeps-maven'
 apply plugin: 'signing'
 
-group = 'com.github.pukkaone'
+group = 'com.github.gustajz'
 
-sourceCompatibility = 1.7
+sourceCompatibility = 1.6
 
 repositories {
     mavenLocal()
@@ -103,12 +103,12 @@ uploadArchives {
                     name 'logback-gelf'
                     packaging 'jar'
                     description 'Logback appender that sends GELF messages'
-                    url 'https://github.com/pukkaone/logback-gelf'
+                    url 'https://github.com/gustajz/logback-gelf'
 
                     scm {
-                        connection 'scm:git:git@github.com:pukkaone/logback-gelf.git'
-                        developerConnection 'scm:git:git@github.com:pukkaone/logback-gelf.git'
-                        url 'https://github.com/pukkaone/logback-gelf'
+                        connection 'scm:git:git@github.com:gustajz/logback-gelf.git'
+                        developerConnection 'scm:git:git@github.com:gustajz/logback-gelf.git'
+                        url 'https://github.com/gustajz/logback-gelf'
                     }
 
                     licenses {

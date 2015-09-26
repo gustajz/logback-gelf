@@ -33,7 +33,7 @@ public class GelfAppender extends AppenderBase<ILoggingEvent> {
     private boolean mdcIncluded;
     private boolean threadIncluded;
     private String facility = "gelf-java";
-    private Map<String, String> additionalFields = new HashMap<>();
+    private Map<String, String> additionalFields = new HashMap<String, String>();
     private String amqpURI;
     private String amqpExchange;
     private String amqpRoutingKey;

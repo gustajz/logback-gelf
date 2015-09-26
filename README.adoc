@@ -1,7 +1,7 @@
 = Logback appender that sends GELF messages
 
 Send log events to a Graylog2 server by GELF protocol over UDP, TCP, TCP over
-SSL, or AMQP transport.
+SSL, or AMQP transport for Java 1.6.
 
 
 == Usage

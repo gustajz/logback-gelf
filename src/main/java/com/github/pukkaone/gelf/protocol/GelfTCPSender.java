@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.net.InetAddress;
 import java.net.Socket;
-import java.nio.charset.StandardCharsets;
 
 public class GelfTCPSender extends GelfSender {
 
@@ -17,7 +16,7 @@ public class GelfTCPSender extends GelfSender {
     private OutputStreamWriter getWriter() throws IOException {
         if (socket == null) {
             socket = getSocket();
-            writer = new OutputStreamWriter(socket.getOutputStream(), StandardCharsets.UTF_8);
+            writer = new OutputStreamWriter(socket.getOutputStream(), "UTF_8");
         }
         return writer;
     }
